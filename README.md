@@ -6,6 +6,7 @@ Registration:
 - email: eve.holt@reqres.in
 - password: pistol
 - mobile phone can be random
+
 Should response:
 
 {
@@ -16,6 +17,7 @@ Should response:
 Login:
 - email: eve.holt@reqres.in
 - password: cityslicka
+
 Should response:
 {
     "token": "QpwL5tke4Pnpja7X4"
