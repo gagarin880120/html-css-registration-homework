@@ -1,1 +1,1 @@
-# html-css-registration-homework
+https://gagarin880120.github.io/html-css-registration-homework/index.html
