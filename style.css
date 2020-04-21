@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(./assets/fonts/ProximaNova-Regular.ttf);
+}
+
+body {
+  background: url(./assets/images/Layer\ 4\ copy@1X.png);
+  font-family: "Proxima Nova";
+}
+
+.registration {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: rgba(17,23,27,.7)
+}
+
+.registration--tabs--radio {
+  display: none;
+}
+
+.registration--tabs--label {
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.registration--tabs--radio:checked + .registration--tabs--label {
+  border-bottom: 3px solid #ffab1a;
+}
+
+.registration--form {
+  display: none;
+}
+
+.signIn__button:checked ~ .signIn__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUp__button:checked ~ .signUp__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration--form--field {
+  outline: none;
+  font-family: "Proxima Nova";
+  width: 100%;
+  margin-top: 15%;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.registration--form--field::placeholder {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.registration--form--checkbox--container {
+  display: flex;
+  margin-top: 10%;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.registration--form--submit {
+  width: 45%;
+  height: 39px;
+  border-radius: 20px;
+  background-color: #f57f17;
+  margin-top: 10%;
+  outline: none;
+  border: none;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.registration--form--submit:active {
+  transform: translateY(2px);
+}
