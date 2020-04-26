@@ -5,6 +5,7 @@
 
 body {
   background: url(./assets/images/Layer\ 4\ copy@1X.png);
+  background-size: cover;
   font-family: "Proxima Nova";
 }
 
@@ -40,13 +41,11 @@ body {
 .signIn__button:checked ~ .signIn__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .signUp__button:checked ~ .signUp__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .registration--form--field {
@@ -65,11 +64,40 @@ body {
   color: #ffffff;
 }
 
-.registration--form--checkbox--container {
-  display: flex;
+.registration--form--checkbox {
+  display: none;
+}
+
+.registration--form--checkbox--label {
   margin-top: 10%;
   font-size: 15px;
   color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.registration--form--checkbox--label:before {
+  content:'';
+  background-color: #215AA7;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.registration--form--checkbox:checked + .registration--form--checkbox--label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 6px;
+  height: 9px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .registration--form--submit {
@@ -77,6 +105,7 @@ body {
   height: 39px;
   border-radius: 20px;
   background-color: #f57f17;
+  margin: 0 auto;
   margin-top: 10%;
   outline: none;
   border: none;
@@ -89,6 +118,14 @@ body {
 
 .registration--form--submit:active {
   transform: translateY(2px);
+}
+
+.registration--form--link {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 800px) {

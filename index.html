@@ -18,17 +18,18 @@
     <form action="https://reqres.in/api/login" method="POST" class="registration--form signIn__form">
       <input type="email" class="registration--form--field" name="email" required placeholder="E-mail">
       <input type="password" class="registration--form--field" name="password" required placeholder="Password">
+      <input type="checkbox" required id="check" class="registration--form--checkbox">
+      <label for="check" class="registration--form--checkbox--label">Keep me logged in</label>
       <input type="submit" class="registration--form--submit" value="Login">
+      <a href="#" class="registration--form--link">Forgot password?</a>
     </form>
 
     <form action="https://reqres.in/api/register" method="POST" class="registration--form signUp__form">
       <input type="tel" class="registration--form--field" name="phone" required placeholder="Mobile phone">
       <input type="email" class="registration--form--field" name="email" required placeholder="E-mail ID">
       <input type="password" class="registration--form--field" name="password" required placeholder="Password">
-      <div class="registration--form--checkbox--container">
-        <input type="checkbox" required id="check">
-        <label for="check" class="registration--form--checkbox--label">I agree with terms and conditions</label>
-      </div>
+      <input type="checkbox" required id="check" class="registration--form--checkbox">
+      <label for="check" class="registration--form--checkbox--label">I agree with terms and conditions</label>
       <input type="submit" class="registration--form--submit" value="Register">
     </form>
 
