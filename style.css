@@ -5,16 +5,19 @@
 
 body {
   background: url(./assets/images/Layer\ 4\ copy@1X.png);
-  background-size: cover;
+  background-size: cover cover;
   font-family: "Proxima Nova";
+  display: flex;
+  justify-content: center;
 }
 
 .registration {
-  width: 30%;
+  width: 32%;
   margin: 0 auto;
-  margin-top: 5%;
-  padding: 5%;
-  background-color: rgba(17,23,27,.7)
+  margin-top: 9%;
+  background-color: rgba(17,23,27,.7);
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 
 .registration--tabs--radio {
@@ -26,8 +29,12 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
-  margin-right: 5%;
+  margin-left: 10%;
   cursor: pointer;
+}
+
+.signUp__label {
+  margin-left: 8%;
 }
 
 .registration--tabs--radio:checked + .registration--tabs--label {
@@ -41,22 +48,37 @@ body {
 .signIn__button:checked ~ .signIn__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 19%;
 }
 
 .signUp__button:checked ~ .signUp__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 19%;
 }
 
 .registration--form--field {
   outline: none;
   font-family: "Proxima Nova";
-  width: 100%;
-  margin-top: 15%;
+  width: 80%;
   background-color: transparent;
   border: none;
   color: #ffffff;
   border-bottom: 1px solid #fbfbfb;
+}
+
+.signUp__email, .signUp__password {
+  margin-top: 17%;
+}
+
+.signIn__email {
+  margin-top: 6%;
+}
+
+.signIn__password {
+  margin-top: 17%;
 }
 
 .registration--form--field::placeholder {
@@ -69,11 +91,17 @@ body {
 }
 
 .registration--form--checkbox--label {
+  align-self: start;
   margin-top: 10%;
+  margin-left: 10%;
   font-size: 15px;
   color: #ffffff;
   position: relative;
   cursor: pointer;
+}
+
+.signIn__checkbox__label {
+  margin-top: 8%;
 }
 
 .registration--form--checkbox--label:before {
@@ -116,6 +144,10 @@ body {
   cursor: pointer;
 }
 
+.signIn__submit {
+  margin-top: 15%;
+}
+
 .registration--form--submit:active {
   transform: translateY(2px);
 }
@@ -137,9 +169,10 @@ body {
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 600px) {
   .registration {
-    width: 60%;
+    width: 100%;
+    margin: 0;
   }
 }
 
