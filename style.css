@@ -5,19 +5,20 @@
 
 body {
   background: url(./assets/images/Layer\ 4\ copy@1X.png);
-  background-size: cover cover;
+  background-size: cover;
+  background-position: center;
+  /* width: 100vw;*/
+  height: 100vh;
   font-family: "Proxima Nova";
-  display: flex;
-  justify-content: center;
 }
 
 .registration {
-  width: 32%;
   margin: 0 auto;
   margin-top: 9%;
+  height: 500px;
+  width: 430px;
   background-color: rgba(17,23,27,.7);
-  padding-top: 3%;
-  padding-bottom: 4%;
+  padding-top: 45px;
 }
 
 .registration--tabs--radio {
@@ -31,10 +32,11 @@ body {
   border: none;
   margin-left: 10%;
   cursor: pointer;
+  font-family: "Proxima Nova";
 }
 
 .signUp__label {
-  margin-left: 8%;
+  margin-left: 9%;
 }
 
 .registration--tabs--radio:checked + .registration--tabs--label {
@@ -43,26 +45,23 @@ body {
 
 .registration--form {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 87px 42px 0;
 }
 
 .signIn__button:checked ~ .signIn__form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 19%;
 }
 
 .signUp__button:checked ~ .signUp__form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 19%;
 }
 
 .registration--form--field {
   outline: none;
   font-family: "Proxima Nova";
-  width: 80%;
+  width: 100%;
   background-color: transparent;
   border: none;
   color: #ffffff;
@@ -70,7 +69,7 @@ body {
 }
 
 .signUp__email, .signUp__password {
-  margin-top: 17%;
+  margin-top: 21%;
 }
 
 .signIn__email {
@@ -78,12 +77,13 @@ body {
 }
 
 .signIn__password {
-  margin-top: 17%;
+  margin-top: 21%;
 }
 
 .registration--form--field::placeholder {
   font-size: 17px;
   color: #ffffff;
+  padding-left: 5px;
 }
 
 .registration--form--checkbox {
@@ -92,22 +92,22 @@ body {
 
 .registration--form--checkbox--label {
   align-self: start;
-  margin-top: 10%;
-  margin-left: 10%;
   font-size: 15px;
   color: #ffffff;
   position: relative;
   cursor: pointer;
+  font-family: "Proxima Nova";
+  margin-top: 13%;
 }
 
 .signIn__checkbox__label {
-  margin-top: 8%;
+  margin-top: 11%;
 }
 
 .registration--form--checkbox--label:before {
   content:'';
   background-color: #215AA7;
-  padding: 8px;
+  padding: 10px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -129,12 +129,11 @@ body {
 }
 
 .registration--form--submit {
-  width: 45%;
+  width: 190px;
   height: 39px;
   border-radius: 20px;
   background-color: #f57f17;
   margin: 0 auto;
-  margin-top: 10%;
   outline: none;
   border: none;
   font-family: "Proxima Nova";
@@ -142,10 +141,11 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 12%;
 }
 
 .signIn__submit {
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 .registration--form--submit:active {
@@ -156,23 +156,20 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-align: center;
-  font-size: 18px;
-  margin-top: 5%;
-}
-
-@media screen and (max-width: 800px) {
-  .registration {
-    width: 45%;
-  }
-  .registration--form--submit {
-    width: 80%;
-  }
+  font-size: 20px;
+  font-family: "Proxima Nova";
+  margin-top: 7%;
 }
 
 @media screen and (max-width: 600px) {
   .registration {
     width: 100%;
-    margin: 0;
+  }
+  .registration--form {
+    padding-top: 2%;
+  }
+  .registration--form--field {
+    margin-top: 10%;
   }
 }
 

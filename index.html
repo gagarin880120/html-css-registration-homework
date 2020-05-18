@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
   <title>Registration form</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
     </form>
 
     <form action="https://reqres.in/api/register" method="POST" class="registration--form signUp__form">
-      <input type="tel" class="registration--form--field signUp__tel" name="phone" required placeholder="Mobile phone">
+      <input type="tel" class="registration--form--field" name="phone" required placeholder="Mobile phone">
       <input type="email" class="registration--form--field signUp__email" name="email" required placeholder="E-mail ID">
       <input type="password" class="registration--form--field signUp__password" name="password" required placeholder="Password">
       <input type="checkbox" required id="checkSignUp" class="registration--form--checkbox">
