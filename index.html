@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+  <title>Registration form</title>
+</head>
+<body>
+  <section class="registration">
+    
+    <input type="radio" name="tabs" class="registration--tabs--radio signIn__button" id="signIn" />
+    <label for="signIn" class="registration--tabs--label">Sign In</label>
+
+    <input type="radio" name="tabs" class="registration--tabs--radio signUp__button" id="signUp" checked />
+    <label for="signUp" class="registration--tabs--label signUp__label">Sign Up</label>
+
+    <form action="https://reqres.in/api/login" method="POST" class="registration--form signIn__form">
+      <input type="email" class="registration--form--field signIn__email" name="email" required placeholder="E-mail">
+      <input type="password" class="registration--form--field signIn__password" name="password" required placeholder="Password">
+      <input type="checkbox" required id="checkSignIn" class="registration--form--checkbox">
+      <label for="checkSignIn" class="registration--form--checkbox--label signIn__checkbox__label">Keep me logged in</label>
+      <input type="submit" class="registration--form--submit signIn__submit" value="Login">
+      <a href="#" class="registration--form--link">Forgot password?</a>
+    </form>
+
+    <form action="https://reqres.in/api/register" method="POST" class="registration--form signUp__form">
+      <input type="tel" class="registration--form--field" name="phone" required placeholder="Mobile phone">
+      <input type="email" class="registration--form--field signUp__email" name="email" required placeholder="E-mail ID">
+      <input type="password" class="registration--form--field signUp__password" name="password" required placeholder="Password">
+      <input type="checkbox" required id="checkSignUp" class="registration--form--checkbox">
+      <label for="checkSignUp" class="registration--form--checkbox--label">I agree with terms and conditions</label>
+      <input type="submit" class="registration--form--submit" value="Register">
+    </form>
+
+  </section>
+</body>
+</html>
